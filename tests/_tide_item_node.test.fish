@@ -16,4 +16,7 @@ _node # CHECK:
 touch package.json
 _node # CHECK: ⬢ 16.5.0
 
+set -lx tide_language_items_show_version false
+_node # CHECK: ⬢
+
 command rm -r $tmpdir

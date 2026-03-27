@@ -15,6 +15,10 @@ _python # CHECK:
 set -lx VIRTUAL_ENV /home/ilan/python_project/non-generic-name
 _python # CHECK:  3.11.5 (non-generic-name)
 
+set -lx tide_language_items_show_version false
+_python # CHECK: 
+set -e tide_language_items_show_version
+
 set -lx VIRTUAL_ENV /home/ilan/python_project/venv
 _python # CHECK:  3.11.5 (python_project)
 
